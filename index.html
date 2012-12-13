@@ -51,10 +51,11 @@
             // Additional initialization code such as adding Event Listeners goes here
             FB.getLoginStatus(function(s) {
                 if ( s.status === 'connected' ) {
-                    if ( s.authResponse.userID === '0100001807644444' ) {
+                    if ( s.authResponse.userID === '1007588651' ) {
                         $('#hulu').fadeIn('fast');
                     } else {
                         $('#linch').fadeIn('fast');
+                        $('#hulu').remove();
                     }
                 } else if ( s.status === 'not_authorized' ) {
                     console.log('almost');

@@ -94,6 +94,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+a,
+a:visited {
+    color: royalblue;
+    text-decoration: none;
+}
 .me {
     font-size: 0.4em;
     color: #999;
